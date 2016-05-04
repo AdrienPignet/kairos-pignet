@@ -13,7 +13,7 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
+define('_URL_IMAGES', get_stylesheet_directory_uri().'/assets/images/');
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );
 
@@ -49,3 +49,15 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
+function my_slider() {
+    if (is_front_page() || is_home())
+    {
+        get_template_part( 'template-parts/slider' );
+
+    }
+}
+add_action('foundationpress_after_header', 'my_slider', 10);
+//----- >>>>>>>>>>>
+//----- >>>>>>>>>>>>>>> ICI ACTION WOOCOMMERCE <<<<<<<<--------------------------
+// do_action('nom fonction woocommerce', 'fonction', numéro de priorité);
+// remove_action('nom fonction woocommerce', 'fonction', numéro de priorité)

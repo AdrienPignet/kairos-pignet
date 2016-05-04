@@ -31,7 +31,7 @@ if ( have_comments() ) :
 				'reverse_children'  => '',
 				'format'            => 'html5',
 				'short_ping'        => false,
-				'echo'  	    => true,
+				'echo'  	    	=> true,
 				'moderation' 	    => __( 'Your comment is awaiting moderation.', 'foundationpress' ),
 			)
 		);
@@ -111,10 +111,10 @@ if ( comments_open() ) :
 			</label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
 		</p>
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong> 
+		<p id="allowed_tags" class="small"><strong>XHTML:</strong>
 			<?php
 				_e( 'You can use these tags:','foundationpress' );
-			?> 
+			?>
 			<code>
 				<?php echo allowed_tags(); ?>
 			</code>
