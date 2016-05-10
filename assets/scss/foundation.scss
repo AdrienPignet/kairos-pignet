@@ -75,16 +75,19 @@
   Add your scss files below to structure your project styles
 */
 
-// Modules
-@import "modules/navigation";
-@import "modules/footer";
-@import "modules/sidebar";
-
 // Components
 @import "components/buttons";
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
+@import "components/custom-slide";
+@import "components/global-site";
+
+
+// Modules
+@import "modules/navigation";
+@import "modules/footer";
+@import "modules/sidebar";
 
 // Templates
 @import "templates/front";
@@ -93,3 +96,6 @@
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
+
+
+@import "components/test";

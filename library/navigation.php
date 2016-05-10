@@ -20,15 +20,15 @@ register_nav_menus(array(
  */
 if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 	function foundationpress_top_bar_r() {
-		wp_nav_menu( array(
+		/*wp_nav_menu( array(
 			'container'      => false,
-			'menu_class'     => 'dropdown menu',
-			'items_wrap'     => '<ul id="%1$s" class="%2$s desktop-menu" data-dropdown-menu>%3$s</ul>',
+			'menu_class'     => 'dropdown menu expanded',
+			'items_wrap'     => '<div class="megadropdown row"><ul id="%1$s" class="%2$s desktop-menu" data-dropdown-menu>%3$s</ul></div>',
 			'theme_location' => 'top-bar-r',
 			'depth'          => 3,
 			'fallback_cb'    => false,
 			'walker'         => new Foundationpress_Top_Bar_Walker(),
-		));
+		));*/
 	}
 }
 
@@ -38,7 +38,7 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
  */
 if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 	function foundationpress_mobile_nav() {
-		wp_nav_menu( array(
+		/*wp_nav_menu( array(
 			'container'      => false,                         // Remove nav container
 			'menu'           => __( 'mobile-nav', 'foundationpress' ),
 			'menu_class'     => 'vertical menu',
@@ -46,7 +46,7 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 			'items_wrap'     => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
 			'fallback_cb'    => false,
 			'walker'         => new Foundationpress_Mobile_Walker(),
-		));
+		));*/
 	}
 }
 

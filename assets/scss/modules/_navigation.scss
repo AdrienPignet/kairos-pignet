@@ -26,14 +26,43 @@
 
 /* Tablet and desktop menu */
 .top-bar {
-
+    height: auto;
+    background: #fff;
+    ul{
+        background: #fff;
+    }
+    #menu-main-menu{
+        background: #fff;
+        width: 100%;
+        li{
+            transition: 0.4s ease all;
+            &.active a{
+                background: #fff;
+                opacity: 0.3;
+            }
+            &:hover a{
+                opacity: 0.3;
+                transition: 0.4s ease all;
+            }
+            a{
+            text-align: center;
+            font-family: $montserrat;
+            font-size: 18px;
+            color: #000;
+            text-transform: uppercase;
+            }
+        }
+    }
   .menu .home a {
     font-size: 1rem;
     color: #B9B9B9;
+    background: #fff;
+    img{
+        transition: 0.4s ease all;
+    }
   }
 
   .menu a {
-    height: 45px;
     line-height: 45px;
     color: #e6e6e6;
     padding-top: 0;
@@ -43,17 +72,29 @@
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      background-color: #fff;
+      img{
+          opacity: 0.3;
+          transition: 0.4s ease all;
+      }
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu>li:not(.menu-text)>a { padding: 1rem;  }
+  .menu li:not(:last-child) { }
 
   .dropdown.menu .submenu {
-    background-color: #121212;
+    background-color: #f0f0f0;
     color: #e6e6e6;
     border: 0;
+    position: absolute;
+    right: 0;
+    width: 1200px;
+    z-index: 999;
+    height: 40vh;
+    li{
+        display: block;
+    }
   }
 
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }

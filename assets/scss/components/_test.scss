@@ -1,0 +1,29 @@
+.mega-menu-toggle{
+    position: relative;
+    z-index: 2;
+    margin-top: -58px;
+    transition: 0.4s ease all;
+}
+
+.title-bar-title{
+    padding: 20px;
+    img{
+        width: 100px;
+        position: relative;
+        z-index: 99;
+    }
+
+}
+
+.top-bar-section{
+    #mega-menu-wrap-top-bar-r{
+        #mega-menu-top-bar-r{
+            position: absolute;
+            z-index: 999;
+            top: 60px;
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+        }
+    }
+}
