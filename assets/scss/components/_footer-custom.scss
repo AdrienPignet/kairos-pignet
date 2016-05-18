@@ -1,0 +1,85 @@
+footer{
+    background: #000;
+    color: #fff;
+    .footer-content{
+        padding: 70px 0 0 0;
+        div{
+            max-height: 160px;
+            vertical-align: top;
+            margin: 0 0 50px 0;
+            h3{
+                font-family: $montserrat;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            ul{
+                margin: 0;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        font-family: $montserrat;
+                        color: #fff;
+                        transition: 0.4s ease all;
+                        &:hover{
+                            color: #aaaaaa;
+                            transition: 0.4s ease all;
+                        }
+                    }
+                }
+            }
+            form{
+                position: relative;
+                input{
+                    height: 32px;
+                    &[type="email"]{
+                        width: 80%;
+                        border: none;
+                    }
+                    &[type="submit"]{
+                        width: 20%;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        color: #000;
+                        transition: 0.4s ease all;
+                        border: none;
+                        background: #aaaaaa;
+                        font-size: 10px;
+                        font-family: $montserrat;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        &:hover{
+                            transition: 0.4s ease all;
+                            background: #424242;
+                            color: #fff;
+                        }
+                    }
+                    &::placeholder{
+                        font-size: 10px;
+                        font-family: $montserrat;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    h6{
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1099px){
+    footer{
+        .footer-content{
+            padding: 50px 20px;
+        }
+    }
+}

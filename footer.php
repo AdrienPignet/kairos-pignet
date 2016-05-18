@@ -10,8 +10,7 @@
 
 ?>
 
-		</section>
-		<div id="footer-container">
+		<!--<div id="footer-container">
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
@@ -25,52 +24,55 @@
 		</div><!-- Close off-canvas wrapper inner -->
 	</div><!-- Close off-canvas wrapper -->
 </div><!-- Close off-canvas content wrapper -->
-<?php endif; ?>
+<?php endif; ?>-->
 
+<footer>
+	<div class="row footer-content">
+		<div class="small-12 medium-4 large-2 columns">
+			<h3>Informations</h3>
+			<ul>
+				<li><a href="#">à propos de nous</a></li>
+				<li><a href="#">Contactez-nous</a></li>
+				<li><a href="#">Confidentialité</a></li>
+				<li><a href="#">Plan du site</a></li>
+				<li><a href="#">Crédits</a></li>
+			</ul>
+		</div>
+		<div class="small-12 medium-4 large-2 columns">
+			<h3>Aide et assistance</h3>
+			<ul>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Livraison &amp; retours</a></li>
+				<li><a href="#">CGV</a></li>
+			</ul>
+		</div>
+		<div class="small-12 medium-4 large-2 columns">
+			<h3>Suivez-nous</h3>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Google plus</a></li>
+			</ul>
+		</div>
+		<div class="small-12 medium-6 large-3 columns">
+			<h3>Inscription Newsletter</h3>
+			<form class="" action="#" method="post">
+				<input type="email" name="email" placeholder="Votre email">
+				<input type="submit" name="submit" value="ok">
+			</form>
+		</div>
+		<div class="small-12 medium-6 large-3 columns">
+			<h3>Payement sécurisé</h3>
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/banque-white.png" alt="Payement sécurisé" />
+		</div>
+	</div>
+	<h6>©2016 - Kairos</h6>
+</footer>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 <script type="text/javascript">
-$(document).ready(function () {
 
-"use strict";
-
-$('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
-//Checks if li has sub (ul) and adds class for toggle icon - just an UI
-
-
-$('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-//Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
-
-$(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">Navigation</a>");
-
-//Adds menu-mobile class (for mobile toggle menu) before the normal menu
-//Mobile menu is hidden if width is more then 959px, but normal menu is displayed
-//Normal menu is hidden if width is below 959px, and jquery adds mobile menu
-//Done this way so it can be used with wordpress without any trouble
-
-$(".menu > ul > li").hover(function (e) {
-	if ($(window).width() > 943) {
-		$(this).children("ul").stop(true, false).fadeToggle(150);
-		e.preventDefault();
-	}
-});
-//If width is more than 943px dropdowns are displayed on hover
-
-$(".menu > ul > li").click(function () {
-	if ($(window).width() <= 943) {
-		$(this).children("ul").fadeToggle(150);
-	}
-});
-//If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
-
-$(".menu-mobile").click(function (e) {
-	$(".menu > ul").toggleClass('show-on-mobile');
-	e.preventDefault();
-});
-//when clicked on mobile-menu, normal menu is shown as a list, classic rwd menu story (thanks mwl from stackoverflow)
-
-});
 </script>
 </body>
 </html>

@@ -56,7 +56,12 @@ function my_slider() {
 
     }
 }
-add_action('foundationpress_after_header', 'my_slider', 10);
+add_action('foundationpress_after_header', 'my_slider', 20);
+function new_excerpt_length($length) {
+ return 20;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
 //----- >>>>>>>>>>>
 //----- >>>>>>>>>>>>>>> ICI ACTION WOOCOMMERCE <<<<<<<<--------------------------
 // do_action('nom fonction woocommerce', 'fonction', numéro de priorité);
