@@ -1,0 +1,130 @@
+.ariane{
+    text-align: center;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav.woocommerce-breadcrumb{
+        margin: 0;
+        padding: 10px;
+        a{
+            color: #fff;
+            transition: 0.4s ease all;
+            &:hover{
+                transition: 0.4s ease all;
+                color: #777;
+            }
+        }
+    }
+}
+
+.full-watches{
+    padding-top: 20px;
+    .entry-summary{
+        padding-top: 10%;
+        h1{
+            font-family: $opensans;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px !important;
+            margin: 0 !important;
+        }
+        div{
+            p{
+                margin: 0;
+                font-family: $opensans;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        div[itemprop="offers"]{
+            padding-top: 10px;
+            font-family: $montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            p{
+                color: #000;
+            }
+
+        }
+        form{
+            margin-top: 20px;
+            button{
+                text-align: center;
+                font-family: $montserrat;
+                font-size: 16px;
+                background: #000 !important;
+                color: #fff;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                transition: 0.4s ease all;
+                &:hover{
+                    opacity: 0.5;
+                    transition: 0.4s ease all;
+                }
+            }
+        }
+    }
+    .related{
+        h2{
+            height: 215px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(../images/fixe/bgtitle/associate.jpg) center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: $montserrat;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            text-align: center;
+        }
+        ul{
+            li{
+                a{
+                    img{
+
+                    }
+                    h3{
+                        font-family: $opensans;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #000;
+                        transition: 0.4s ease all;
+                        height: 50px;
+                        &:hover{
+                            transition: 0.4s ease all;
+                            opacity: 0.5;
+                        }
+                    }
+                    span{
+                        margin-top: 10px;
+                    }
+                }
+                .add_to_cart_button{
+                    text-align: center;
+                    font-family: $montserrat;
+                    font-size: 12px;
+                    background: #000 !important;
+                    color: #fff;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    transition: 0.4s ease all;
+                    &:hover{
+                        opacity: 0.5;
+                        transition: 0.4s ease all;
+                    }
+                }
+            }
+        }
+    }
+}

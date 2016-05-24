@@ -72,7 +72,7 @@
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 <script type="text/javascript">
-
+$('h1').before($('.summary div:eq(1)'));
 </script>
 </body>
 </html>

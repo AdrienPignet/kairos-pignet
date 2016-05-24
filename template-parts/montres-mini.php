@@ -1,5 +1,5 @@
 <div class="small-12 medium-6 large-3 columns">
-    <div class="watches-img">
+    <div id="img-mini" class="watches-img">
         <?php the_post_thumbnail(); ?>
     </div>
     <span>

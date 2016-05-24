@@ -64,5 +64,5 @@ add_filter('excerpt_length', 'new_excerpt_length');
 
 //----- >>>>>>>>>>>
 //----- >>>>>>>>>>>>>>> ICI ACTION WOOCOMMERCE <<<<<<<<--------------------------
-// do_action('nom fonction woocommerce', 'fonction', numéro de priorité);
-// remove_action('nom fonction woocommerce', 'fonction', numéro de priorité)
+    //remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt',  20);
+    //do_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt',  5);
