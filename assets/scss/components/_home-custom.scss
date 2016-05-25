@@ -1,3 +1,29 @@
+.quote-bg{
+    background: #000;
+    padding: 50px;
+    .quote{
+        color: #fff;
+        h2{
+            font-size: 22px;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            font-family: $garamond;
+        }
+        h3{
+            font-size: 14px;
+            display: block;
+            margin: 20px auto 0 auto;
+            text-align: right;
+            width: 80%;
+        }
+    }
+}
+
+.reassurance-bg{
+    background: #f0f0f0;
+}
+
 .reassurance{
     padding: 100px 0;
     div{
@@ -58,12 +84,12 @@
     img{
         display: block;
         margin: 0 auto;
-        transition: 0.4s ease all;
+        transition: 2s ease all;
     }
     &:hover{
         img{
             transform: scale(1.5, 1.5);
-            transition: 0.4s ease all;
+            transition: 2s ease all;
         }
     }
 }

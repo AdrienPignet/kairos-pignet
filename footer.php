@@ -73,6 +73,7 @@
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 <script type="text/javascript">
 $('h1').before($('.summary div:eq(1)'));
+$('.additional_information_tab a').innerHTML = 'caractéristiques';
 </script>
 </body>
 </html>

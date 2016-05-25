@@ -1,2 +1,8 @@
 $montserrat: 'Montserrat', sans-serif;
 $opensans: 'Open Sans', sans-serif;
+$garamond: 'EB Garamond', serif;
+@media screen and (max-width: 640px){
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class*=columns-] ul.products li.product, .woocommerce[class*=columns-] ul.products li.product{
+        width: 100%;
+    }
+}

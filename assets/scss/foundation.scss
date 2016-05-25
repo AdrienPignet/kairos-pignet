@@ -6,6 +6,7 @@
   The Foundation framework is built by Zurb
   Licensed under MIT Open Source
 */
+@import "components/animated";
 
 //  Settings
 @import "global/settings"; // Foundation settings file.
@@ -95,7 +96,6 @@
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
-
 
 @import "components/header";
 @import "components/slider-custom";

@@ -4,7 +4,6 @@
         <span>
             <a href="#" class="new">Nouveauté</a><h2>Bell &amp; Ross</h2><h3>BR 123 Vintage</h3><a href="#" class="decouvrir">Découvrir</a>
         </span>
-
     </div>
     <div class="slide02">
         <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/slider/slide02.png" alt="Montre02" />

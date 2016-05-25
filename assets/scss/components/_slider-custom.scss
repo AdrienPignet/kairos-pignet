@@ -22,7 +22,7 @@
         }
     }
     div{
-        height: 40vh;
+        height: 360px;
         width: 100%;
         position: relative;
         background: #212121;
@@ -30,7 +30,7 @@
             position: absolute;
             top: 30%;
             right: 40%;
-            height: 20vh;
+            height: 190px;
             .new{
                 color: #000;
                 border: 3px solid #000;
@@ -82,6 +82,7 @@
     .custom-cycle{
         overflow: hidden;
         div{
+            height:300px;
             span{
                 right: 10%;
                 background: #fff;
@@ -124,21 +125,21 @@
             background: #f0f0f0;
             img{
                 position: relative;
-                left: 10px;
+                left: 10%;
             }
         }
         .slide02{
             background: #f0f0f0;
             img{
                 position: relative;
-                left: 10px;
+                left: 10%;
             }
         }
         .slide03{
             background: #f0f0f0;
             img{
                 position: relative;
-                left: 10px;
+                left: 10%;
             }
         }
     }
@@ -157,21 +158,21 @@
             background: #f0f0f0;
             img{
                 position: relative;
-                left: 18%;
+                left: 20%;
             }
         }
         .slide02{
             background: #f0f0f0;
             img{
                 position: relative;
-                left: 13%;
+                left: 20%;
             }
         }
         .slide03{
             background: #f0f0f0;
             img{
                 position: relative;
-                left: 8%;
+                left: 12%;
             }
         }
     }
