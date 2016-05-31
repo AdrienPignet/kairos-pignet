@@ -21,28 +21,39 @@
 }
 
 .reassurance-bg{
-    background: #f0f0f0;
+    background: #fff;
 }
 
 .reassurance{
-    padding: 100px 0;
+    padding: 50px 0;
+    border-top: 1px solid #000;
     div{
         text-align: center;
-        padding: 0 60px;
-        height: 180px;
+        padding: 20px;
         vertical-align: bottom;
-        img{
-            margin: 0 auto;
-            display: block;
-            vertical-align: bottom;
+        .rea-item{
+            border: 1px solid #000;
+            transition: 0.4s ease all;
+            img{
+                margin: 0 auto;
+                display: block;
+                vertical-align: bottom;
+                height: 40px;
+            }
+            h3{
+                padding-top: 30px;
+                font-size: 12px;
+                font-family: $opensans;
+                font-weight: 700;
+                vertical-align: bottom;
+                display: block;
+            }
+            &:hover{
+                background: #f0f0f0;
+                transition: 0.4s ease all;
+            }
         }
-        h3{
-            padding-top: 30px;
-            font-size: 14px;
-            font-family: $opensans;
-            font-weight: 700;
-            vertical-align: bottom;
-        }
+
     }
 }
 
@@ -63,19 +74,26 @@
 .best-sells{
     background: url(../images/fixe/bgtitle/best-sells.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    //background-attachment: fixed;
 }
 
 .marques{
     background: url(../images/fixe/bgtitle/nosmarques.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    //background-attachment: fixed;
 }
 
 .blog-title{
     background: url(../images/fixe/bgtitle/blog.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    //background-attachment: fixed;
+}
+
+.new-watches{
+    width: 100%;
+    background: url(../images/fixe/bgtitle/nouveaute.jpg) center center no-repeat;
+    background-size: cover;
+    //background-attachment: fixed;
 }
 #img-mini{
     overflow: hidden;
@@ -84,20 +102,45 @@
     img{
         display: block;
         margin: 0 auto;
-        transition: 2s ease all;
+        transition: 0.4s ease all;
     }
     &:hover{
         img{
-            transform: scale(1.5, 1.5);
-            transition: 2s ease all;
+            transform: scale(1.1, 1.1);
+            transition: 0.4s ease all;
         }
     }
 }
 .watches-bsells{
     padding:70px 0;
     div{
-        .watch-img{
-
+        position: relative;
+        &:hover{
+            transition: 0.4s ease all;
+            .price{
+                .amount{
+                    position: absolute;
+                    width: 100%;
+                    display: block;
+                    color: #fff;
+                    background: #000;
+                    top: 0;
+                    text-align: center;
+                    height: 30px;
+                    line-height: 30px;
+                    vertical-align: middle;
+                    font-family: $opensans;
+                    padding: 0;
+                    margin: 0;
+                    transition: 0.4s ease all;
+                }
+            }
+        }
+        .price{
+            display: block;
+            .amount{
+                display: none;
+            }
         }
         span{
             h4{
@@ -126,9 +169,12 @@
                 width: 100%;
                 text-transform: uppercase;
                 letter-spacing: 5px;
+                border: 1px solid #000;
                 transition: 0.4s ease all;
                 &:hover{
-                    opacity: 0.5;
+                    background: #fff;
+                    color: #000;
+                    border: 1px solid #000;
                     transition: 0.4s ease all;
                 }
             }
@@ -149,7 +195,9 @@
         }
     }
 }
-
+.blog-bg{
+    background: #fff;
+}
 .blog-items{
     padding: 70px 0;
     div{
@@ -189,9 +237,12 @@
             width: 100%;
             text-transform: uppercase;
             letter-spacing: 5px;
+            border: 1px solid #000;
             transition: 0.4s ease all;
             &:hover{
-                opacity: 0.5;
+                border: 1px solid #000;
+                background: #f0f0f0;
+                color: #000;
                 transition: 0.4s ease all;
             }
 
@@ -209,7 +260,7 @@
     .reassurance{
         padding: 50px 0;
         div{
-            padding:0 20px;
+            //padding:0 20px;
             h3{
                 font-size: 12px;
                 margin: 0;
@@ -220,6 +271,38 @@
         padding: 50px 0;
         div{
             padding: 20px 20px;
+        }
+    }
+    .watches-bsells{
+        padding:70px 0;
+        div{
+            position: relative;
+            &:hover{
+                .price{
+                    display: block;
+                    .amount{
+                        display: block !important;
+                        position: relative !important;
+                        color: #000;
+                        background: #fff;
+                        font-family: $opensans;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .price{
+                display: block;
+                .amount{
+                    display: block !important;
+                    position: relative !important;
+                    color: #000;
+                    font-family: $opensans;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
         }
     }
 }

@@ -1,179 +1,110 @@
-.custom-cycle{
-    overflow: hidden;
-    .slide01{
-        background: #f0f0f0;
-        img{
-            position: relative;
-            left: 25%;
-        }
-    }
-    .slide02{
-        background: #f0f0f0;
-        img{
-            position: relative;
-            left: 25%;
-        }
-    }
-    .slide03{
-        background: #f0f0f0;
-        img{
-            position: relative;
-            left: 25%;
-        }
-    }
-    div{
-        height: 360px;
-        width: 100%;
-        position: relative;
-        background: #212121;
-        span{
-            position: absolute;
-            top: 30%;
-            right: 40%;
-            height: 190px;
-            .new{
-                color: #000;
-                border: 3px solid #000;
-                padding: 7px;
-                text-transform: uppercase;
-                font-family: $montserrat;
-                font-size: 12px;
-                letter-spacing: 5px;
-                transition: 0.4s ease all;
-                &:hover{
-                    opacity: 0.5;
-                    transition: 0.4s ease all;
-                }
-            }
-            h2{
-                color: #000;
-                font-size: 32px;
-                line-height: 32px;
-                font-family: $montserrat;
-                margin: 0;
-                padding: 20px 0 0 0;
-            }
-            h3{
-                color: #000;
-                font-size: 16px;
-                line-height: 16px;
-                margin: 0 0 10px 0;
-                padding: 5px 0 10px 0;
-            }
-            .decouvrir{
-                padding: 10px 30px;
-                color: #fff;
-                letter-spacing: 5px;
-                text-transform: uppercase;
-                background: #000;
-                font-family: $montserrat;
-                transition: 0.4s ease all;
-                &:hover{
-                    opacity: 0.5;
-                    transition: 0.4s ease all;
-                }
-            }
-        }
-
-    }
+.arround-slide{
+    border-top: 1px solid #000;
 }
 
-@media screen and (max-width: 760px){
+.custom-cycle{
+    height: 360px;
+    overflow: hidden;
+
+        .slide{
+            background: #fff;
+            .img-slide{
+                a{
+                    img{
+                        display: block;
+                        max-width: 600px;
+                    }
+                }
+            }
+            .text-slide{
+                display: block;
+                padding: 70px;
+                .text-slide-content{
+                    .new{
+                        color: #000;
+                        border: 3px solid #000;
+                        padding: 7px;
+                        text-transform: uppercase;
+                        font-family: $montserrat;
+                        font-size: 12px;
+                        letter-spacing: 5px;
+                        transition: 0.4s ease all;
+                        &:hover{
+                            opacity: 0.5;
+                            transition: 0.4s ease all;
+                        }
+                    }
+                    h2{
+                        p{
+                            display: block;
+                            margin: 0;
+                            color: #000;
+                            font-size: 32px;
+                            line-height: 32px;
+                            font-family: $montserrat;
+                            margin: 0;
+                            padding: 20px 0 0 0;
+                        }
+                    }
+                    h3{
+                        display: block;
+                            color: #000;
+                            font-size: 14px;
+                            line-height: 14px;
+                            font-family: $opensans;
+                            margin: 0 0 10px 0;
+                            padding: 5px 0 10px 0;
+                    }
+                    .decouvrir{
+                        padding: 10px 30px;
+                        color: #fff;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        background: #000;
+                        font-family: $montserrat;
+                        border: 1px solid #000;
+                        transition: 0.4s ease all;
+                        &:hover{
+                            border: 1px solid #000;
+                            background: none;
+                            color: #000;
+                            transition: 0.4s ease all;
+                        }
+                    }
+
+                }
+            }
+        }
+}
+
+@media screen and (max-width: 640px){
     .custom-cycle{
-        overflow: hidden;
-        div{
-            height:300px;
-            span{
-                right: 10%;
-                background: #fff;
-                padding: 20px;
+        .img-slide{
+            overflow: hidden;
+            a{
+
+                img{
+                    position: relative;
+                    left: -90%;
+                    width: 500px;
+                }
             }
         }
-        .slide01{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 0px;
-            }
-        }
-        .slide02{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 0px;
-            }
-        }
-        .slide03{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 0px;
+        .text-slide{
+            background: #fff;
+            position: relative;
+            left: -15%;
+            padding-left: 0px !important;
+            .decouvrir{
+                padding: 10px !important;
             }
         }
     }
 }
 @media screen and (min-width: 761px) and (max-width: 1099px){
-    .custom-cycle{
-        overflow: hidden;
-        div{
-            span{
-                right: 10%;
-                padding: 20px;
-            }
-        }
-        .slide01{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 10%;
-            }
-        }
-        .slide02{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 10%;
-            }
-        }
-        .slide03{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 10%;
-            }
-        }
-    }
+
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1850px){
-    .custom-cycle{
-        overflow: hidden;
-        div{
-            span{
-                right: 32%;
-                padding: 20px;
-            }
-        }
-        .slide01{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 20%;
-            }
-        }
-        .slide02{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 20%;
-            }
-        }
-        .slide03{
-            background: #f0f0f0;
-            img{
-                position: relative;
-                left: 12%;
-            }
-        }
-    }
+
 }

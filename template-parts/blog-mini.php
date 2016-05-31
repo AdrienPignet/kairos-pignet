@@ -1,4 +1,4 @@
-<div class="small-12 medium-6 large-3 columns">
+<div class="small-12 medium-6 large-3 columns end">
     <div class="img-container">
         <?php the_post_thumbnail(); ?>
     </div>

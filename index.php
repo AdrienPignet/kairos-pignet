@@ -28,42 +28,24 @@ get_header(); ?>
 	</div>
 	<div class="row watches-bsells">
 		<?php
-		$args = array(
+			$args = array(
 			'post_type' => 'product',
+			'stock' => 1,
 			'posts_per_page' => 4,
 			'meta_key' => 'total_sales',
-			'oderby' => 'meta_value_num'
+			'orderby' => 'meta_value_num',
 			);
-		$loop = new WP_Query( $args );
-		if ( $loop->have_posts() ) {
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) {
 			while ( $loop->have_posts() ) : $loop->the_post();
-				get_template_part( 'template-parts/montres-mini', get_post_format() );
+			get_template_part( 'template-parts/montres-mini', get_post_format() );
+
 			endwhile;
-		} else {
-			echo __( 'Erreur de chargement des produits' );
-		}
-		wp_reset_postdata();
-	?>
-	</div>
-	<div class="reassurance-bg" role="main">
-		<div class="reassurance row">
-			<div class="small-6 medium-6 large-3 columns">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/tracabilite.png" alt="Authenticité" />
-				<h3>Authenticité et traçabilité des produits</h3>
-			</div>
-			<div class="small-6 medium-6 large-3 columns">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/livraison.png" alt="Livraison" />
-				<h3>Livraison rapide et sécurisé</h3>
-			</div>
-			<div class="small-6 medium-6 large-3 columns">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/banque.png" alt="Payement sécurisé" />
-				<h3>Payement sécurisé</h3>
-			</div>
-			<div class="small-6 medium-6 large-3 columns">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/hotline.png" alt="Service client" />
-				<h3>Service client fiable et réactif</h3>
-			</div>
-		</div>
+			} else {
+			echo __( 'No products found' );
+			}
+			wp_reset_query();
+		?>
 	</div>
 	<div class="bg-title marques">
 		<h2>Nos marques</h2>
@@ -91,20 +73,50 @@ get_header(); ?>
 	<div class="bg-title blog-title">
 		<h2>Blog</h2>
 	</div>
-	<div class="row blog-items">
-		<?php if ( have_posts() ) : ?>
+	<div class="blog-bg">
+		<div class="row blog-items">
+			<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/blog-mini', get_post_format() ); ?>
-			<?php endwhile; ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/blog-mini', get_post_format() ); ?>
+				<?php endwhile; ?>
 
-			<?php else : ?>
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php else : ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php endif; // End have_posts() check. ?>
+				<?php endif; // End have_posts() check. ?>
 
-			<?php /* Display navigation to next/previous pages when applicable */ ?>
+				<?php /* Display navigation to next/previous pages when applicable */ ?>
+		</div>
+	</div>
+	<div class="reassurance-bg" role="main">
+		<div class="reassurance row">
+			<div class="small-6 medium-6 large-3 columns">
+				<div class="rea-item">
+					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/tracabilite.png" alt="Authenticité" />
+					<h3>Authenticité des produits</h3>
+				</div>
+			</div>
+			<div class="small-6 medium-6 large-3 columns">
+				<div class="rea-item">
+					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/livraison.png" alt="Livraison" />
+					<h3>Livraison rapide et sécurisé</h3>
+				</div>
+			</div>
+			<div class="small-6 medium-6 large-3 columns">
+				<div class="rea-item">
+					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/banque.png" alt="Payement sécurisé" />
+					<h3>Payement sécurisé</h3>
+				</div>
+			</div>
+			<div class="small-6 medium-6 large-3 columns">
+				<div class="rea-item">
+					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/hotline.png" alt="Service client" />
+					<h3>Service client fiable et réactif</h3>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--<article>
 	<?php if ( have_posts() ) : ?>

@@ -61,12 +61,15 @@
     color: #fff;
     padding: 10px 0;
     width: 300px;
-    margin: 0 auto;
+    margin: 30px auto;
     text-transform: uppercase;
     letter-spacing: 5px;
+    border: 1px solid #000;
     transition: 0.4s ease all;
     &:hover{
-        opacity: 0.5;
+        border: 1px solid #000;
+        background: #fff;
+        color: #000;
         transition: 0.4s ease all;
     }
 }

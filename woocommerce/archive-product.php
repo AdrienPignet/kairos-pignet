@@ -48,7 +48,6 @@ get_header( 'shop' ); ?>
 		?>
 
 		<?php if ( have_posts() ) : ?>
-
 			<?php
 				/**
 				 * woocommerce_before_shop_loop hook.

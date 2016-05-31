@@ -1,0 +1,195 @@
+.full-watches{
+    .filtres-produits{
+        background: #f0f0f0;
+        padding: 40px 20px;
+        margin-bottom: 40px;
+        position: relative;
+        .cancel-filter{
+            top: 20px;
+            right: 20px;
+            position: absolute;
+            display: block;
+            width: 150px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: $opensans !important;
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 10px 5px;
+            text-transform: uppercase;
+            border-radius: 0;
+            border: 1px solid #000;
+            transition: 0.4s ease all;
+            &:hover{
+                background: #f0f0f0 !important;
+                color: #000;
+                border: 1px solid #000;
+                transition: 0.4s ease all;
+            }
+        }
+        h2{
+            font-family: $montserrat;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        div{
+            display: block;
+            .widget-title{
+                display: none;
+            }
+            select{
+                margin: 0;
+                background-color: #f0f0f0;
+                font-family: $opensans;
+            }
+        }
+        .widget_price_filter{
+            margin-top: 20px;
+        }
+    }
+    .page-title{
+        display: none;
+    }
+    .woocommerce-result-count{
+        display: none;
+    }
+    .woocommerce-ordering{
+        display: none;
+    }
+    ul{
+        li{
+            a{
+                overflow: hidden;
+                display: block;
+                img{
+                    overflow: hidden;
+                    transition: 0.4s ease all;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1, 1.1);
+                        transition: 0.4s ease all;
+                    }
+                    span{
+                        .amount{
+                            position: absolute;
+                            width: 100%;
+                            display: block;
+                            color: #fff;
+                            background: #000;
+                            top: 0;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 30px;
+                            vertical-align: middle;
+                            font-family: $opensans;
+                            padding: 0;
+                            margin: 0;
+                            transition: 0.4s ease all;
+                        }
+                    }
+                }
+                h3{
+                    font-family: $opensans;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #000;
+                    transition: 0.4s ease all;
+                    height: 40px;
+                    display: block;
+                    text-align: center;
+                    &:hover{
+                        transition: 0.4s ease all;
+                        opacity: 0.5;
+                    }
+                }
+                span{
+                    display: block;
+                    .amount{
+                        display: none;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .add_to_cart_button{
+                text-align: center;
+                font-family: $opensans;
+                font-size: 12px;
+                background: #000;
+                color: #fff;
+                padding: 10px 5px;
+                text-transform: uppercase;
+                width: 100%;
+                border-radius: 0;
+                border: 1px solid #000;
+                transition: 0.4s ease all;
+                &:hover{
+                    background: #fff !important;
+                    color: #000;
+                    border: 1px solid #000;
+                    transition: 0.4s ease all;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .filtres-produits{
+        div{
+            margin-bottom: 20px;
+        }
+    }
+        ul{
+            li{
+                &:hover{
+                    span{
+                        .amount{
+                            position: relative;
+                            width: 100%;
+                            display: block;
+                            color: #000;
+                            background: #fff !important;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 30px;
+                            vertical-align: middle;
+                            font-family: $opensans;
+                        }
+                    }
+                }
+                a{
+                    h3{
+                        font-family: $opensans;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #000;
+                        transition: 0.4s ease all;
+                        height: 40px !important;
+                        overflow: hidden;
+                        display: block;
+
+                    }
+                }
+                span{
+                    display: block;
+                    padding-top: 10px;
+                    .amount{
+                        display: block !important;
+                        position: relative !important;
+                        color: #000;
+                        font-family: $opensans;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+
+}

@@ -47,6 +47,9 @@ require_once( 'library/sticky-posts.php' );
 /** Configure responsive image sizes */
 require_once( 'library/responsive-images.php' );
 
+/** Custum woocommerce */
+require_once( 'library/custom-woo-fun.php');
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
 function my_slider() {
@@ -62,6 +65,35 @@ function new_excerpt_length($length) {
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
+function textdomain_register_sidebars() {
+
+	/* Register the primary sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'sidebar-1',
+			'name' => __( 'filtres-woo', 'textdomain' ),
+			'description' => __( 'Filtres woocommerces', 'textdomain' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-4 columns end">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
+	/* Repeat register_sidebar() code for additional sidebars. */
+    register_sidebar(
+		array(
+			'id' => 'sidebar-2',
+			'name' => __( 'filtres-woo-prix', 'textdomain' ),
+			'description' => __( 'Filtres woocommerces', 'textdomain' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-12 columns end">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+}
+add_action( 'widgets_init', 'textdomain_register_sidebars' );
 //----- >>>>>>>>>>>
 //----- >>>>>>>>>>>>>>> ICI ACTION WOOCOMMERCE <<<<<<<<--------------------------
     //remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt',  20);

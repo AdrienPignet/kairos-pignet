@@ -73,7 +73,10 @@
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 <script type="text/javascript">
 $('h1').before($('.summary div:eq(1)'));
-$('.additional_information_tab a').innerHTML = 'caractéristiques';
+$('.additional_information_tab a').replaceWith('<a href="#tab-additional_information">Caractéristiques</a>');
+$('#woocommerce_product_categories-2 > select.dropdown_product_cat > option:first-of-type').replaceWith('<option value>Marques</option>');
+$('#woocommerce_layered_nav-2 > select.dropdown_layered_nav_matiere > option:first-of-type').replaceWith('<option value>Matière</option>');
+$('#woocommerce_layered_nav-3 > select.dropdown_layered_nav_mecanisme > option:first-of-type').replaceWith('<option value>Mécanisme</option>');
 </script>
 </body>
 </html>
