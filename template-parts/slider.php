@@ -22,7 +22,7 @@
             <?php
     		endwhile;
     		} else {
-    		echo __( 'No products found' );
+    		echo __( 'Erreur de chargement de produits' );
     		}
 
     		wp_reset_query();

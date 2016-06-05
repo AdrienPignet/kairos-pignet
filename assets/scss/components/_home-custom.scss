@@ -103,11 +103,34 @@
         display: block;
         margin: 0 auto;
         transition: 0.4s ease all;
+        &:hover{
+
+        }
     }
     &:hover{
         img{
             transform: scale(1.1, 1.1);
             transition: 0.4s ease all;
+        }
+        transition: 0.4s ease all;
+        .price{
+            .amount{
+                z-index: 999;
+                position: absolute;
+                width: 100%;
+                display: block;
+                color: #fff;
+                background: #000;
+                top: 0;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                vertical-align: middle;
+                font-family: $opensans;
+                padding: 0;
+                margin: 0;
+                transition: 0.4s ease all;
+            }
         }
     }
 }
@@ -115,27 +138,6 @@
     padding:70px 0;
     div{
         position: relative;
-        &:hover{
-            transition: 0.4s ease all;
-            .price{
-                .amount{
-                    position: absolute;
-                    width: 100%;
-                    display: block;
-                    color: #fff;
-                    background: #000;
-                    top: 0;
-                    text-align: center;
-                    height: 30px;
-                    line-height: 30px;
-                    vertical-align: middle;
-                    font-family: $opensans;
-                    padding: 0;
-                    margin: 0;
-                    transition: 0.4s ease all;
-                }
-            }
-        }
         .price{
             display: block;
             .amount{
@@ -241,7 +243,7 @@
             transition: 0.4s ease all;
             &:hover{
                 border: 1px solid #000;
-                background: #f0f0f0;
+                background: #ffffff;
                 color: #000;
                 transition: 0.4s ease all;
             }
@@ -274,30 +276,38 @@
         }
     }
     .watches-bsells{
-        padding:70px 0;
+        padding:20px 0;
         div{
             position: relative;
+            padding-top: 20px;
             &:hover{
                 .price{
-                    display: block;
-                    .amount{
-                        display: block !important;
-                        position: relative !important;
-                        color: #000;
-                        background: #fff;
-                        font-family: $opensans;
-                        height: 30px;
-                        line-height: 30px;
-                    }
+                  display: block;
+                  .amount{
+                      display: block !important;
+                      position: absolute !important;
+                      bottom: 0;
+                      right: 0;
+                      color: #000;
+                      font-family: $montserrat;
+                      letter-spacing: 2px;
+                      height: 30px;
+                      line-height: 30px;
+                      text-align: center;
+                      width: inherit;
+                  }
                 }
             }
             .price{
                 display: block;
                 .amount{
                     display: block !important;
-                    position: relative !important;
+                    position: absolute !important;
+                    bottom: 0;
+                    right: 0;
                     color: #000;
-                    font-family: $opensans;
+                    font-family: $montserrat;
+                    letter-spacing: 2px;
                     height: 30px;
                     line-height: 30px;
                     text-align: center;

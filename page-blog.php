@@ -18,32 +18,20 @@ Template Name: Blog
 
  get_header(); ?>
 
- <?php get_template_part( 'template-parts/featured-image' ); ?>
-
- <div id="page" role="main">
- <?php do_action( 'foundationpress_before_content' ); ?>
- <?php while ( have_posts() ) : the_post(); ?>
-   <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-       <header>
-           <h1 class="entry-title"><?php the_title(); ?></h1>
-       </header>
-       <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-       <div class="entry-content">
-           <?php the_content(); ?>
-       </div>
-       <footer>
-           <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-           <p><?php the_tags(); ?></p>
-       </footer>
-       <?php do_action( 'foundationpress_page_before_comments' ); ?>
-       <?php comments_template(); ?>
-       <?php do_action( 'foundationpress_page_after_comments' ); ?>
-   </article>
- <?php endwhile;?>
-
- <?php do_action( 'foundationpress_after_content' ); ?>
- <?php get_sidebar(); ?>
-
+ <div class="bg-title blog-title">
+   <h2>Blog</h2>
  </div>
+ <div class="blog-bg">
+   <div class="row blog-items">
+     <?php if ( have_posts() ) : ?>
+       <?php /* Start the Loop */ ?>
+       <?php while ( have_posts() ) : the_post(); ?>
+         <?php get_template_part( 'template-parts/blog-mini', get_post_format() ); ?>
+       <?php endwhile; ?>
+       <?php else : ?>
+         <?php get_template_part( 'template-parts/content', 'none' ); ?>
+       <?php endif; // End have_posts() check. ?>
+       <?php /* Display navigation to next/previous pages when applicable */ ?>
+   </div>
 
  <?php get_footer();

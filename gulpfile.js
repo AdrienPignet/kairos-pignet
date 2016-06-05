@@ -59,7 +59,7 @@ var PATHS = {
 
     // Cycle
     'assets/components/jquery-cycle2/build/jquery.cycle2.js',
-
+    
     // Include your own custom scripts (located in the custom folder)
     'assets/javascript/custom/*.js',
   ],

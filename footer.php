@@ -74,9 +74,12 @@
 <script type="text/javascript">
 $('h1').before($('.summary div:eq(1)'));
 $('.additional_information_tab a').replaceWith('<a href="#tab-additional_information">Caractéristiques</a>');
-$('#woocommerce_product_categories-2 > select.dropdown_product_cat > option:first-of-type').replaceWith('<option value>Marques</option>');
+$('#woocommerce_product_categories-2 > select.dropdown_product_cat > option:first-of-type').replaceWith('<option value selectect="selected">Marques</option>');
 $('#woocommerce_layered_nav-2 > select.dropdown_layered_nav_matiere > option:first-of-type').replaceWith('<option value>Matière</option>');
 $('#woocommerce_layered_nav-3 > select.dropdown_layered_nav_mecanisme > option:first-of-type').replaceWith('<option value>Mécanisme</option>');
+$('option.level-0').replaceWith('<option class="level-0" value="montres">Toutes les marques</option>');
+$('.woocommerce-product-search > input[type="submit"]').replaceWith('<span class="search-submit"><div class="icon-container"><i class="fa fa-search" aria-hidden="true"></i></div><input type="submit" value=""></span>');
+$('#post-5 > header > h1.entry-title').replaceWith('<h1 class="entry-title">Votre panier</h1>');
 </script>
 </body>
 </html>

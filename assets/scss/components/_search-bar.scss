@@ -1,0 +1,54 @@
+
+    .search{
+      div{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        form{
+          width: 300px;
+          position: relative;
+          label{
+            display: none;
+          }
+          #woocommerce-product-search-field{
+            height: 30px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #000;
+            font-size: 12px;
+            font-family: $opensans;
+            box-shadow: none;
+            display: block;
+            width: 100%;
+          }
+          .search-submit{
+            position: absolute;
+            top: 0;
+            right: 0;
+            .icon-container{
+              i{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+            input{
+              background: rgba(255, 255, 255, 0);
+              border: none;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+
+
+// PAGE RECHERCHE
+
+#post-119{
+  h1{
+    display: none;
+  }
+}

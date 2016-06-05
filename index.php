@@ -26,7 +26,7 @@ get_header(); ?>
 	<div class="bg-title best-sells">
 		<h2>Meilleures ventes</h2>
 	</div>
-	<div class="row watches-bsells">
+	<div id="montreContainer" class="row watches-bsells">
 		<?php
 			$args = array(
 			'post_type' => 'product',
@@ -51,22 +51,22 @@ get_header(); ?>
 		<h2>Nos marques</h2>
 	</div>
 	<div class="row marques-items">
-		<div class="small-6 medium-4 large-2 columns">
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-4 large-2 columns">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/marques/rolex.jpg" alt="Rolex" />
 		</div>
-		<div class="small-6 medium-4 large-2 columns">
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-4 large-2 columns">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/marques/cartier.jpg" alt="Cartier" />
 		</div>
-		<div class="small-6 medium-4 large-2 columns">
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-4 large-2 columns">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/marques/chopard.jpg" alt="Chopard" />
 		</div>
-		<div class="small-6 medium-4 large-2 columns">
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-4 large-2 columns">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/marques/bellandross.jpg" alt="Bell And Ross" />
 		</div>
-		<div class="small-6 medium-4 large-2 columns">
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-4 large-2 columns">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/marques/omega.jpg" alt="Omega" />
 		</div>
-		<div class="small-6 medium-4 large-2 columns">
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-4 large-2 columns">
 			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/marques/chanel.jpg" alt="Chanel" />
 		</div>
 	</div>
@@ -93,24 +93,24 @@ get_header(); ?>
 	<div class="reassurance-bg" role="main">
 		<div class="reassurance row">
 			<div class="small-6 medium-6 large-3 columns">
-				<div class="rea-item">
+				<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="rea-item">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/tracabilite.png" alt="Authenticité" />
 					<h3>Authenticité des produits</h3>
 				</div>
 			</div>
-			<div class="small-6 medium-6 large-3 columns">
+			<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-6 large-3 columns">
 				<div class="rea-item">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/livraison.png" alt="Livraison" />
 					<h3>Livraison rapide et sécurisé</h3>
 				</div>
 			</div>
-			<div class="small-6 medium-6 large-3 columns">
+			<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-6 large-3 columns">
 				<div class="rea-item">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/banque.png" alt="Payement sécurisé" />
 					<h3>Payement sécurisé</h3>
 				</div>
 			</div>
-			<div class="small-6 medium-6 large-3 columns">
+			<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="small-6 medium-6 large-3 columns">
 				<div class="rea-item">
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/reassurance/hotline.png" alt="Service client" />
 					<h3>Service client fiable et réactif</h3>

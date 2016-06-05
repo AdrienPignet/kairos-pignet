@@ -23,7 +23,6 @@ get_header(); ?>
 			<h2>Filtres</h2>
 			<?php dynamic_sidebar( 'filtres-woo' ); ?>
 			<hr class="clear">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/categorie-produit/montres" class="cancel-filter">Annuler les filtres</a>
 		</div>
 		<?php }?>
 

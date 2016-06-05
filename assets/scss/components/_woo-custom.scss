@@ -1,0 +1,39 @@
+// MODIFICATION PAGE PANIER
+#post-5{
+  header{
+    h1.entry-title{
+      text-align: center;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: $montserrat;
+      letter-spacing: 2px;
+    }
+  }
+  .cart_totals{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    h2{
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: $montserrat;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+  }
+  .wc-proceed-to-checkout{
+    a{
+      background: #000;
+      border-radius: 0;
+      font-family: $montserrat;
+      transition: 0.4s ease all;
+      border: 1px solid #000;
+      &:hover{
+        transition: 0.4s ease all;
+        border: 1px solid #000;
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}

@@ -37,12 +37,27 @@
             display: inline-block;
             list-style: none;
             padding: 0 10px;
+            position: relative;
             a{
                 transition: 0.4s ease all;
                 &:hover{
                     opacity: 0.4;
                     transition: 0.4s ease all;
                 }
+            }
+            .cart-count{
+              position: absolute;
+              right: 5px;
+              top: -5px;
+              background: #000;
+              text-align: center;
+              color: #fff;
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              border-radius: 10px;
+              font-size: 10px;
+              font-family: $montserrat;
             }
         }
     }
@@ -52,7 +67,6 @@
     float: right;
     position: relative;
     z-index: 3;
-    margin: 20px 80px 0 0;
     ul{
         li{
             display: inline-block;
@@ -81,8 +95,8 @@
     }
 }
 
-@media screen and (max-width: 1100px){
-    .top-bar-section{
+@media screen and (min-width: 760px) and (max-width: 1100px){
+    /*.top-bar-section{
         #mega-menu-wrap-top-bar-r{
             #mega-menu-top-bar-r{
                 position: absolute;
@@ -93,5 +107,64 @@
                 background: #fff;
             }
         }
+    }*/
+    .page-content{
+      border-top: 0;
+      padding: 20px 0;
+      margin-top: 0;
     }
+    .menu-technique{
+      ul{
+        li{
+          .cart-count{
+            padding-top: 0;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 759px){
+  .title-bar{
+    background: #fff;
+    padding: 0;
+  }
+  .title-bar-title{
+    padding: 10px 20px;
+  }
+  .menu-mobile{
+    padding: 0;
+  }
+  .mega-menu-toggle{
+    margin: 0;
+  }
+  .menu-technique{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    ul{
+      margin: 0;
+      li{
+        .cart-count{
+          padding-top: 0;
+          width: 17px;
+          height: 17px;
+        }
+        a{
+          img{
+            width: 24px;
+          }
+          &.search-btn{
+            i{
+              font-size: 24px;
+              line-height: 24px;
+              vertical-align: middle;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
 }
