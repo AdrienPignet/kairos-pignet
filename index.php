@@ -28,23 +28,24 @@ get_header(); ?>
 	</div>
 	<div id="montreContainer" class="row watches-bsells">
 		<?php
-			$args = array(
-			'post_type' => 'product',
-			'stock' => 1,
-			'posts_per_page' => 4,
-			'meta_key' => 'total_sales',
-			'orderby' => 'meta_value_num',
-			);
-			$loop = new WP_Query( $args );
-			if ( $loop->have_posts() ) {
-			while ( $loop->have_posts() ) : $loop->the_post();
-			get_template_part( 'template-parts/montres-mini', get_post_format() );
+				$args = array(
+				'post_type' => 'product',
+				'stock' => 1,
+				'posts_per_page' => 4,
+				'meta_key' => 'total_sales',
+				'orderby' => 'meta_value_num',
+				'product_cat' => 'montres',
+				);
+				$loop = new WP_Query( $args );
+				if ( $loop->have_posts() ) {
+				while ( $loop->have_posts() ) : $loop->the_post();
+				get_template_part( 'template-parts/montres-mini', get_post_format() );
 
-			endwhile;
-			} else {
-			echo __( 'No products found' );
-			}
-			wp_reset_query();
+				endwhile;
+				} else {
+				echo __( 'No products found' );
+				}
+				wp_reset_query();
 		?>
 	</div>
 	<div class="bg-title marques">

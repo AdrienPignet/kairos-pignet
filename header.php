@@ -20,6 +20,9 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<!-- IS+ Instant Search Widget -->
+<script src="https://acp-magento.appspot.com/js/acp-magento.js?v=3&mode=woocommerce&UUID=12f869d3-c553-489d-a70d-a95b61f5cf04&store=1"></script>
+<!-- IS+ Instant Search Widget -->
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>

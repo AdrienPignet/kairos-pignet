@@ -3,7 +3,8 @@
         <?php
     		$args = array(
     		'post_type' => 'product',
-    		'posts_per_page' => 3
+    		'posts_per_page' => 3,
+            'product_cat' => 'montres',
     		);
 
     		$loop = new WP_Query( $args );

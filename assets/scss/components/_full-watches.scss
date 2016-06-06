@@ -9,17 +9,18 @@
             right: 20px;
             position: absolute;
             display: block;
-            width: 150px;
+            width: 200px;
             margin: 0 auto;
             text-align: center;
             font-family: $opensans !important;
-            font-size: 12px;
+            font-size: 14px;
             background: #000;
             color: #fff;
             padding: 10px 5px;
             text-transform: uppercase;
             border-radius: 0;
             border: 1px solid #000;
+            letter-spacing: 2px;
             transition: 0.4s ease all;
             &:hover{
                 background: #f0f0f0 !important;
@@ -150,17 +151,20 @@
             li{
                 &:hover{
                     span{
+                        display: block;
+                        padding-top: 10px;
                         .amount{
                             position: relative;
                             width: 100%;
                             display: block;
-                            color: #000;
+                            color: #000 !important;
                             background: #fff !important;
                             text-align: center;
-                            height: 30px;
-                            line-height: 30px;
+                            height: 20px !important;
+                            line-height: 20px !important;
                             vertical-align: middle;
                             font-family: $opensans;
+                            top: 0;
                         }
                     }
                 }
@@ -168,10 +172,11 @@
                     h3{
                         font-family: $opensans;
                         font-weight: 700;
+                        font-size: 12px !important;
                         text-transform: uppercase;
                         color: #000;
                         transition: 0.4s ease all;
-                        height: 40px !important;
+                        height: 20px !important;
                         overflow: hidden;
                         display: block;
 
@@ -185,8 +190,8 @@
                         position: relative !important;
                         color: #000;
                         font-family: $opensans;
-                        height: 30px;
-                        line-height: 30px;
+                        height: 20px;
+                        line-height: 20px;
                     }
                 }
             }

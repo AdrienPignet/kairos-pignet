@@ -58,6 +58,8 @@
 }
 
 .bg-title{
+    position: relative;
+    top: -10px;
     height: 215px;
     display: flex;
     align-items: center;
@@ -88,6 +90,14 @@
     background-size: cover;
     //background-attachment: fixed;
 }
+
+.bracelet{
+    width: 100%;
+    background: url(../images/fixe/bgtitle/bracelet.jpg) center center no-repeat;
+    background-size: cover;
+    //background-attachment: fixed;
+}
+
 
 .new-watches{
     width: 100%;
