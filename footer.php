@@ -32,7 +32,7 @@
 			<h3>Informations</h3>
 			<ul>
 				<li><a href="#">à propos de nous</a></li>
-				<li><a href="#">Contactez-nous</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/' ) )?>contact/">Contactez-nous</a></li>
 				<li><a href="#">Confidentialité</a></li>
 				<li><a href="#">Plan du site</a></li>
 				<li><a href="#">Crédits</a></li>

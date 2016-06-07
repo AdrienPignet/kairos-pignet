@@ -65,14 +65,16 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
 	do_action( 'woocommerce_before_shop_loop_item_title' );
-	?> <h4><?php the_excerpt(); ?></h4><?php
+	?> <?php if(!is_product_category('bracelet')){?><h4><?php the_excerpt(); ?></h4><?php }?><?php
 	/**
 	 * woocommerce_shop_loop_item_title hook.
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
-
+	 ?>
+	 <?php if(!is_product_category('bracelet')){?>
+	<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
+	<?php }
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.
 	 *
