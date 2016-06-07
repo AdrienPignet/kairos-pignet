@@ -75,21 +75,26 @@ get_header(); ?>
 		<h2>Blog</h2>
 	</div>
 	<div class="blog-bg">
-		<div class="row blog-items">
-			<?php if ( have_posts() ) : ?>
+		<div data-scrollreveal="enter bottom over 0.4s and move 100px after 0.3s" class="row blog-items">
+			<?php
+	                $args = array(
+	                'post_type' => 'post',
+	                'posts_per_page' => 4,
+	                );
+	                $loop = new WP_Query( $args );
+	                if ( $loop->have_posts() ) {
+	                while ( $loop->have_posts() ) : $loop->the_post();
+	                get_template_part( 'template-parts/blog-mini', get_post_format() );
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'template-parts/blog-mini', get_post_format() ); ?>
-				<?php endwhile; ?>
+	                endwhile;
+	                } else {
+	                echo __( 'No products found' );
+	                }
+	                wp_reset_query();
+	        ?>
 
-				<?php else : ?>
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-				<?php endif; // End have_posts() check. ?>
-
-				<?php /* Display navigation to next/previous pages when applicable */ ?>
 		</div>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/blog" class="back-blog">Voir plus d'articles</a>
 	</div>
 	<div class="reassurance-bg" role="main">
 		<div class="reassurance row">
@@ -119,26 +124,5 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<!--<article>
-	<?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; // End have_posts() check. ?>
-
-		<?php /* Display navigation to next/previous pages when applicable */ ?>
-		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-			</nav>
-		<?php } ?>
-
-	</article>-->
 <?php get_footer();

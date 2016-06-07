@@ -62,7 +62,9 @@
         display: none;
     }
     ul{
+        margin-top: 40px;
         li{
+            position: relative;
             a{
                 overflow: hidden;
                 display: block;
@@ -82,10 +84,10 @@
                             display: block;
                             color: #fff;
                             background: #000;
-                            top: 0;
                             text-align: center;
                             height: 30px;
                             line-height: 30px;
+                            top: 0;
                             vertical-align: middle;
                             font-family: $opensans;
                             padding: 0;
@@ -94,27 +96,35 @@
                         }
                     }
                 }
+                h4{
+                    margin: 0 !important;
+                    p{
+                        font-family: $opensans;
+                        font-size: 14px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-align: left;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        color: #000;
+                    }
+                }
                 h3{
                     font-family: $opensans;
                     font-size: 14px;
-                    font-weight: 700;
-                    text-transform: uppercase;
+                    margin: 0;
+                    text-align: left;
+                    font-weight: 400;
+                    text-transform: none;
+                    padding: 0 !important;
+                    height: inherit;
                     color: #000;
-                    transition: 0.4s ease all;
-                    height: 40px;
-                    display: block;
-                    text-align: center;
-                    &:hover{
-                        transition: 0.4s ease all;
-                        opacity: 0.5;
-                    }
                 }
                 span{
                     display: block;
                     .amount{
                         display: none;
-                        height: 30px;
-                        line-height: 30px;
+                        transition: 0.4s ease all;
                     }
                 }
             }
@@ -126,10 +136,11 @@
                 color: #fff;
                 padding: 10px 5px;
                 text-transform: uppercase;
-                width: 100%;
                 border-radius: 0;
+                width: 100%;
                 border: 1px solid #000;
                 transition: 0.4s ease all;
+                margin-top: 5px !important;
                 &:hover{
                     background: #fff !important;
                     color: #000;
@@ -153,18 +164,27 @@
                     span{
                         display: block;
                         padding-top: 10px;
+                        position: absolute !important;
+                        bottom: 40px !important;
+                        right: 10px !important;
+                        z-index: 999;
                         .amount{
-                            position: relative;
-                            width: 100%;
-                            display: block;
-                            color: #000 !important;
-                            background: #fff !important;
-                            text-align: center;
-                            height: 20px !important;
-                            line-height: 20px !important;
-                            vertical-align: middle;
+                            display: block !important;
                             font-family: $opensans;
-                            top: 0;
+                            position: relative !important;
+                            width: inherit !important;
+                            color: #000 !important;
+                            background: none !important;
+                            text-align: center;
+                            height: inherit !important;
+                            line-height: inherit !important;
+                            vertical-align: none !important;
+                            font-family: $opensans;
+                            padding: 0;
+                            top: -28px !important;
+                            bottom: 40px !important;
+                            right: 10px !important;
+                            margin: 0;
                         }
                     }
                 }
@@ -185,13 +205,18 @@
                 span{
                     display: block;
                     padding-top: 10px;
+                    position: absolute !important;
+                    bottom: 40px;
+                    right: 10px;
+                    z-index: 999;
                     .amount{
                         display: block !important;
-                        position: relative !important;
+                        font-size: 16px;
                         color: #000;
                         font-family: $opensans;
                         height: 20px;
                         line-height: 20px;
+
                     }
                 }
             }

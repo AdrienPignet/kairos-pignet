@@ -41,7 +41,7 @@
 			</div>
 			<div class="menu-technique top-bar-right small-6 columns">
 				<ul>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/search-results" class="search-btn"><i class="fa fa-search"></i></a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>search-results" class="search-btn"><i class="fa fa-search"></i></a></li>
 					<li><a href="<?php echo get_page_link(7); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/profil.png" alt="Profil" /></a></li>
 					<li><a href="<?php echo get_page_link(5); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/fixe/cart.png" alt="Profil" /></a><span class="cart-count"><?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span></li>
 				</ul>

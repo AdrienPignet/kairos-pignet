@@ -16,7 +16,7 @@
                 </div>
                 <div class="small-6 large-6 columns end text-slide">
                         <div class="text-slide-content">
-                            <a href="#" class="new">Nouveauté</a><h2><?php the_excerpt(); ?></h2><h3><?php the_title(); ?></h3><a href="<?php the_permalink(); ?>" class="decouvrir">Découvrir</a>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>categorie-produit/nouveaute/" class="new">Nouveauté</a><h2><?php the_excerpt(); ?></h2><h3><?php the_title(); ?></h3><a href="<?php the_permalink(); ?>" class="decouvrir">Découvrir</a>
                         </div>
                 </div>
             </div>

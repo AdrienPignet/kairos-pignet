@@ -37,7 +37,7 @@ get_header(); ?>
 		</div>
 
 	</div>
-	<a href="#" class="back-blog">Retour au blog</a>
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog" class="back-blog">Retour au blog</a>
 
 <?php endwhile;?>
 

@@ -34,3 +34,11 @@ $garamond: 'EB Garamond', serif;
   border-top: 1px solid #000;
   padding: 40px 0;
 }
+
+@media screen and (max-width: 1099px){
+    .page-content{
+      margin-top: 0;
+      border-top: none;
+      padding: 20px 0;
+    }
+}

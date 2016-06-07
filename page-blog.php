@@ -23,15 +23,21 @@ Template Name: Blog
  </div>
  <div class="blog-bg">
    <div class="row blog-items">
-     <?php if ( have_posts() ) : ?>
-       <?php /* Start the Loop */ ?>
-       <?php while ( have_posts() ) : the_post(); ?>
-         <?php get_template_part( 'template-parts/blog-mini', get_post_format() ); ?>
-       <?php endwhile; ?>
-       <?php else : ?>
-         <?php get_template_part( 'template-parts/content', 'none' ); ?>
-       <?php endif; // End have_posts() check. ?>
-       <?php /* Display navigation to next/previous pages when applicable */ ?>
+       <?php
+               $args = array(
+               'post_type' => 'post',
+               );
+               $loop = new WP_Query( $args );
+               if ( $loop->have_posts() ) {
+               while ( $loop->have_posts() ) : $loop->the_post();
+               get_template_part( 'template-parts/blog-mini', get_post_format() );
+
+               endwhile;
+               } else {
+               echo __( 'No products found' );
+               }
+               wp_reset_query();
+       ?>
    </div>
 
  <?php get_footer();

@@ -73,7 +73,7 @@ function textdomain_register_sidebars() {
 			'id' => 'sidebar-1',
 			'name' => __( 'filtres-woo', 'textdomain' ),
 			'description' => __( 'Filtres woocommerces', 'textdomain' ),
-			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-4 columns end">',
+			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-3 columns end">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
 			'after_title' => '</h3>'

@@ -34,8 +34,8 @@
             }
             &:hover{
                 img{
-                    transform: scale(2, 2);
-                    transition: 10s ease all;
+                    transform: scale(1.5, 1.5);
+                    transition: 1s ease all;
                 }
 
             }
@@ -169,20 +169,28 @@
                             }
                         }
                     }
+                    h4{
+                        margin: 0 !important;
+                        p{
+                            font-family: $opensans;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            text-align: left;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            color: #000;
+                        }
+                    }
                     h3{
                         font-family: $opensans;
                         font-size: 14px;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        color: #000;
-                        transition: 0.4s ease all;
-                        height: 40px;
-                        display: block;
-                        text-align: center;
-                        &:hover{
-                            transition: 0.4s ease all;
-                            opacity: 0.5;
-                        }
+                        margin: 0;
+                        text-align: left;
+                        font-weight: 400;
+                        text-transform: none;
+                        padding: 0 !important;
+                        height: inherit;
                     }
                     span{
                         display: block;
@@ -203,6 +211,7 @@
                     border-radius: 0;
                     border: 1px solid #000;
                     transition: 0.4s ease all;
+                    margin-top: 5px !important;
                     &:hover{
                         background: #fff !important;
                         color: #000;
