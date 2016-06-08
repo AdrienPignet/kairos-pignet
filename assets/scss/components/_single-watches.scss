@@ -275,19 +275,30 @@
             li{
                 &:hover{
                     span{
-                        .amount{
-                            position: relative;
-                            width: 100%;
-                            display: block;
-                            color: #000 !important;
-                            background: #fff !important;
-                            text-align: center;
-                            height: 30px;
-                            line-height: 30px;
-                            vertical-align: middle;
-                            font-family: $opensans;
-                            transition: none !important;
-                        }
+                      display: block;
+                      padding-top: 10px;
+                      position: absolute !important;
+                      bottom: 40px !important;
+                      right: 10px !important;
+                      z-index: 999;
+                      .amount{
+                          display: block !important;
+                          font-family: $opensans;
+                          position: relative !important;
+                          width: inherit !important;
+                          color: #000 !important;
+                          background: none !important;
+                          text-align: center;
+                          height: inherit !important;
+                          line-height: inherit !important;
+                          vertical-align: none !important;
+                          font-family: $opensans;
+                          padding: 0;
+                          top: -28px !important;
+                          bottom: 40px !important;
+                          right: 10px !important;
+                          margin: 0;
+                      }
                     }
                 }
                 a{
@@ -304,21 +315,30 @@
                     }
                 }
                 span{
-                    display: block;
-                    padding-top: 10px;
-                    .amount{
-                        position: relative;
-                        width: 100%;
-                        display: block;
-                        color: #000 !important;
-                        background: #fff !important;
-                        text-align: center;
-                        height: 30px;
-                        line-height: 30px;
-                        vertical-align: middle;
-                        font-family: $opensans;
-                        transition: none !important;
-                    }
+                  display: block;
+                  padding-top: 10px;
+                  position: absolute !important;
+                  bottom: 40px !important;
+                  right: 10px !important;
+                  z-index: 999;
+                  .amount{
+                      display: block !important;
+                      font-family: $opensans;
+                      position: relative !important;
+                      width: inherit !important;
+                      color: #000 !important;
+                      background: none !important;
+                      text-align: center;
+                      height: inherit !important;
+                      line-height: inherit !important;
+                      vertical-align: none !important;
+                      font-family: $opensans;
+                      padding: 0;
+                      top: -28px !important;
+                      bottom: 40px !important;
+                      right: 10px !important;
+                      margin: 0;
+                  }
                 }
             }
         }
