@@ -72,9 +72,9 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
 	 ?>
-	 <?php if(!is_product_category('bracelet')){?>
+	 <?php //if(!is_product_category('bracelet')){?>
 	<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
-	<?php }
+	<?php //}
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.
 	 *

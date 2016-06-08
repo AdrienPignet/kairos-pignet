@@ -8,6 +8,7 @@
 
 get_header(); ?>
 
+
 <div class="small-12 large-12 columns ariane">
 		<?php woocommerce_breadcrumb(); ?>
 </div>

@@ -74,10 +74,10 @@
 <script type="text/javascript">
 $('h1').before($('.summary div:eq(1)'));
 $('.additional_information_tab a').replaceWith('<a href="#tab-additional_information">Caractéristiques</a>');
-//$('#woocommerce_product_categories-2 > select.dropdown_product_cat > option:first-of-type').replaceWith('<option value selectect="selected">Marques</option>');
-$('#woocommerce_layered_nav-5 > select.dropdown_layered_nav_matiere > option:first-of-type').replaceWith('<option value>Matière</option>');
-$('#woocommerce_layered_nav-6 > select.dropdown_layered_nav_mecanisme > option:first-of-type').replaceWith('<option value>Mécanisme</option>');
-$('#woocommerce_layered_nav-7 > select.dropdown_layered_nav_genre > option:first-of-type').replaceWith('<option value>Genre</option>')
+$('#woocommerce_product_categories-2 > select.dropdown_product_cat > option:first-of-type').replaceWith('<option value selected="selected">Marques</option>');
+$('#woocommerce_layered_nav-5 > select.dropdown_layered_nav_matiere > option:first-of-type').replaceWith('<option value selected="selected">Matière</option>');
+$('#woocommerce_layered_nav-6 > select.dropdown_layered_nav_mecanisme > option:first-of-type').replaceWith('<option value selected="selected">Mécanisme</option>');
+$('#woocommerce_layered_nav-7 > select.dropdown_layered_nav_genre > option:first-of-type').replaceWith('<option value selected="selected">Genre</option>')
 //$('option.level-0:nth-child(1)').replaceWith('<option class="level-0" value="montres">Toutes les marques</option>');
 $('.woocommerce-product-search > input[type="submit"]').replaceWith('<span class="search-submit"><div class="icon-container"><i class="fa fa-search" aria-hidden="true"></i></div><input type="submit" value=""></span>');
 $('#post-5 > header > h1.entry-title').replaceWith('<h1 class="entry-title">Votre panier</h1>');

@@ -17,7 +17,7 @@ $garamond: 'EB Garamond', serif;
 }
 
 .clear{
-    visibility: hidden;
+    display: none;
     clear: both;
     margin: 0;
 }
@@ -33,6 +33,29 @@ $garamond: 'EB Garamond', serif;
   margin-top: 20px;
   border-top: 1px solid #000;
   padding: 40px 0;
+}
+
+.term-bracelet{
+  ul.products{
+    li{
+      a{
+        h3{
+          font-family: $opensans;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: left;
+          margin: 0 !important;
+          padding: 0 !important;
+          color: #000;
+          height: 50px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1099px){
